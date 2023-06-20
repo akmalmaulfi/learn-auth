@@ -1,0 +1,26 @@
+GET http://localhost:3001/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWEiOiJNZWdhIiwiZW1haWwiOiJtZWdhQGdtYWlsLmNvbSIsImlhdCI6MTY4NjkyNzUzNiwiZXhwIjoxNjg2OTI3NTUxfQ.gd7zpCGL0OvBRlzbKNfSEXLPfO91VN8gasvr_Utn4b0
+###
+POST http://localhost:3001/users/register
+Content-Type: application/json
+
+{
+    "nama": "Maulfi",
+    "email": "maulfi@gmail.com",
+    "password": "123"
+}
+
+###
+POST http://localhost:3001/users/login
+Content-Type: application/json
+
+{
+    "email": "mega@gmail.com",
+    "password": "12345"
+}
+
+###
+GET http://localhost:3001/token
+
+###
+DELETE http://localhost:3001/logout
